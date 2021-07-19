@@ -9,7 +9,9 @@ let trackers = {
     piratebay: {text: "Search The Pirate Bay", link: "https://pirate-bays.net/search?q=" + title + " " + year},
     yts: {text: "Search YTS", link: "https://yts.mx/browse-movies/" + title + " " + year + "/all/all/0/seeds/0/all"},
     ttsx: {text: "Search 1337x", link: "https://www.1377x.to/sort-search/" + title + " " + year + "/seeders/desc/1/"},
-    rutracker: {text: "Search RuTracker", link: "https://rutracker.org/forum/tracker.php?nm=" + title + " " + year}
+    rutracker: {text: "Search RuTracker", link: "https://rutracker.org/forum/tracker.php?nm=" + title + " " + year},
+    bd25: {text: "Search BD25", link: "http://www.bd25.eu/index.php?page=files&search=" + title + " " + year},
+    snahp: {text: "Search Snahp", link: "https://forum.snahp.it/search.php?keywords=" + title + " " + year + "&sf=titleonly"}
 }
 
 chrome.storage.sync.get(null, function(result) {
