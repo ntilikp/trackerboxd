@@ -9,6 +9,8 @@ function saveOptions(e) {
       yts: document.querySelector("#yts").checked,
       ttsx: document.querySelector("#ttsx").checked,
       rutracker: document.querySelector("#rutracker").checked,
+      bd25: document.querySelector("#bd25").checked,
+      snahp: document.querySelector("#snahp").checked,
     });
   }
   
@@ -22,6 +24,8 @@ function restoreOptions() {
       document.querySelector("#yts").checked = result.yts;
       document.querySelector("#ttsx").checked = result.ttsx;
       document.querySelector("#rutracker").checked = result.rutracker;
+      document.querySelector("#bd25").checked = result.bd25;
+      document.querySelector("#snahp").checked = result.snahp;
     });
   }
   
